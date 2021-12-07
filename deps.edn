@@ -1,0 +1,4 @@
+{:deps
+ {org.clojure/clojure {:mvn/version "1.11.0-alpha3"}
+  org.clojure/math.numeric-tower {:mvn/version "0.0.5"}
+  nrepl/nrepl {:mvn/version "0.8.3"}}}
