@@ -1,6 +1,5 @@
 (ns advent2021.day4
-  (:require [clojure.java.io :as io]
-            [clojure.string :as str]))
+  (:require [clojure.string :as str]))
 
 (def input
   (slurp "src/advent2021/day4/day4.in"))
@@ -11,6 +10,7 @@
 (def test-board
   [[[1 true]  [2 true]  [3 true]]
    [[4 true] [5 false] [6 false]]])
+
 
 (defn parse-input [input]
   (let [[-draws & -boards] (str/split input #"\n\n")
@@ -24,6 +24,7 @@
     [draws boards]))
 
 (defn pad-string-left [s n]
+
   (let [w (- n (count s))
         p (apply str (repeat w " "))]
     (str p s)))
