@@ -99,5 +99,5 @@
 
 (prn
  "Day 11\n"
- "- Part 1: " (part1 main-input)
- "- Part 2: " (part2 main-input))
+ "- Part 1: " (part1 main-input 100)
+ "- Part 2: " (part2 main-input 1000))

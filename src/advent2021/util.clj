@@ -13,3 +13,8 @@
 
 (defn w-some [f coll]
   (some #(when (f %) %) coll))
+
+(defn occurances [coll x]
+  (reduce #(if (= %2 x)
+             (inc %1)
+             %1) 0 coll))
