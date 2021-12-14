@@ -18,3 +18,6 @@
   (reduce #(if (= %2 x)
              (inc %1)
              %1) 0 coll))
+
+(defn +. [& args]
+  (apply + (remove nil? args)))

@@ -1,6 +1,5 @@
 (ns advent2021.day3
-  (:require [clojure.java.io :as io]
-            [clojure.string :as str]
+  (:require [clojure.string :as str]
             [clojure.math.numeric-tower :refer [expt]]))
 
 (def input

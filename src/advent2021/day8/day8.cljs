@@ -1,5 +1,5 @@
 (ns advent2021.day8
-  (:require [advent2021.util :refer [node-slurp single w-some]]
+  (:require [advent2021.util :refer [node-slurp single]]
             [clojure.string :as str]
             [clojure.set :as set]))
 
@@ -15,7 +15,7 @@
 (defn parse-input [input]
   (map parse-line (str/split-lines input)))
 
-(defn process-line [[digits output]]
+(defn process-line [[_ output]]
   (->> output
        (map count)
        (keep #{2 4 3 7})

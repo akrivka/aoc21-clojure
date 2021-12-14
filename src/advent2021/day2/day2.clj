@@ -1,6 +1,5 @@
 (ns advent2021.day2
-  (:require [clojure.java.io :as io]
-            [clojure.string :as str]))
+  (:require [clojure.string :as str]))
 
 (def input
   (->> (slurp "src/advent2021/day2/day2.in")
@@ -21,7 +20,7 @@
   (->> input
   (reduce 
     (fn [pos ev-str] 
-      ((get-fn (get-ev ev-str)) pos)) 
+      ((get-fn1 (get-ev ev-str)) pos)) 
     {:horiz 0
      :depth 0})
   (map second)

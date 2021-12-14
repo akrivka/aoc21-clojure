@@ -1,5 +1,5 @@
 (ns advent2021.day7
-  (:require [advent2021.util :refer [node-slurp abs exp]]
+  (:require [advent2021.util :refer [node-slurp abs]]
             [clojure.string :as str]))
 
 (def main-input

@@ -1,6 +1,5 @@
 (ns advent2021.day12
   (:require [clojure.string :as str]
-            [clojure.java.io :as io]
             [advent2021.util :refer [occurances]]))
 
 (def main-input
@@ -63,7 +62,7 @@
   
   )
 
-(js/console.log
+(println
  "Day 12\n"
  "- Part 1: " (part1 main-input)
  "- Part 2: " (part2 main-input))

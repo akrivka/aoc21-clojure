@@ -1,7 +1,6 @@
 (ns advent2021.day11
   (:require [advent2021.util]
-            [clojure.string :as str]
-            [clojure.java.io :as io]))
+            [clojure.string :as str]))
 
 (def main-input
   (slurp "src/advent2021/day11/day11.in"))
