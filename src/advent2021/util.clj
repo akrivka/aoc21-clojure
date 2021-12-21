@@ -21,3 +21,13 @@
 
 (defn +. [& args]
   (apply + (remove nil? args)))
+
+(defn >. [a b]
+  (if (some nil? [a b])
+    true
+    (> a b)))
+
+(defn <. [a b]
+  (if (some nil? [a b])
+    true
+    (< a b)))
