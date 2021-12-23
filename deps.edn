@@ -3,4 +3,11 @@
   org.clojure/math.numeric-tower {:mvn/version "0.0.5"}
   org.clojure/math.combinatorics {:mvn/version "0.1.6"}
   net.mikera/core.matrix {:mvn/version "0.62.0"}
-  nrepl/nrepl {:mvn/version "0.8.3"}}}
+  nrepl/nrepl {:mvn/version "0.8.3"}}
+ :aliases
+ {:profile
+  {:extra-deps
+   {com.clojure-goes-fast/clj-async-profiler {:mvn/version "0.5.1"}}
+   :jvm-opts ["-Djdk.attach.allowAttachSelf"
+              "-XX:+UnlockDiagnosticVMOptions"
+              "-XX:+DebugNonSafepoints"]}}}

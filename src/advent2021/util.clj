@@ -31,3 +31,12 @@
   (if (some nil? [a b])
     true
     (< a b)))
+
+(defn spy [x]
+  (println x)
+  x)
+
+(defn index-of [pred coll]
+  (some (fn [[i x]] (when (pred x) i)) (map-indexed vector coll)))
+
+(index-of #(= % 1) [2 2 3])
